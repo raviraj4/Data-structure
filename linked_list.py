@@ -112,6 +112,8 @@ class LinkedList:
             if n.data ==x:
                 print("element ",x," found at ", n)
             n = n.ref
+        if n is None:
+            print("no match found")
             
     # Size
     def size(self):
@@ -141,12 +143,12 @@ nums.add_begin(23)
 nums.add_at_end(43)
 nums.add_at_end(83)
 nums.add_begin(38)
-nums.add_after(69,23)
-nums.add_before(96,23)
+# nums.add_after(69,23)
+# nums.add_before(96,23)
 # print
 nums.printlist()
 # searching
-nums.search(83)
+nums.search(1111)
 # size
 nums.size()
 # del
